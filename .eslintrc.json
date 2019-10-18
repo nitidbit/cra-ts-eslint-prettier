@@ -5,7 +5,8 @@
     },
     "extends": [
         "airbnb",
-        "plugin:@typescript-eslint/eslint-recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+        "prettier"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -21,8 +22,10 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error"
     }
 }
