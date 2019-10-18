@@ -1,3 +1,35 @@
+## Sample Create React App using Typescript
+* `npx create-react-app <my-app-name> --typescript`
+
+## Add ESLint for TypeScript and configure
+see: https://github.com/typescript-eslint/typescript-eslint/issues/147
+* `yarn add -D eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+* `eslint --init`
+* use defaults, except I saved my .eslintrc as JSON
+
+## Add Prettier, Prettier Config, Prettier Plugin
+* `yarn add prettier --dev --exact`
+* `yarn add --dev eslint-config-prettier`
+* `yarn add --dev eslint-plugin-prettier`
+* make updates to .eslintrc
+see: https://prettier.io/docs/en/integrating-with-linters.html#eslint
+
+## Tweak ESLint / Prettier Rules
+* update .eslintrc
+* add .prettierrc
+
+### I made 3 changes to the default rules:
+* add .ts, .tsx files to contain JSX
+* prefer single quotes
+* optimize prettier for 100 char width
+
+## TODO
+Use npm instead of yard for app configuraion
+
+
+
+-----
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
