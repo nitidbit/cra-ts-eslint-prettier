@@ -1,3 +1,6 @@
+# TypeScript React App with AirBnB Linter rules
+I found a lot if out of date info while trying to configure our TypeScript React app to use ESLint with AirBnB rules and Prettier. I'm creating this repo for future reference.
+
 ## Sample Create React App using Typescript
 * `npx create-react-app <my-app-name> --typescript`
 
@@ -17,6 +20,7 @@ see: https://prettier.io/docs/en/integrating-with-linters.html#eslint
 ## Tweak ESLint / Prettier Rules
 * update .eslintrc
 * add .prettierrc
+Note: .prettierrc is a JSON file, but you cannot add .json extension or Prettier will ignore it (https://github.com/prettier/prettier-vscode/issues/734)
 
 ### I made 3 changes to the default rules:
 * add .ts, .tsx files to contain JSX
